@@ -15,28 +15,7 @@
     2.4. Run command line "bundle update --bundler"
 
 ## STEP3: Run test
-    NOTE: Oest scripts are in "rspec" 
-    3.1. Open file ".env" and setup cofiguration like below
-    **cofiguration for running test from your PC/Laptop local**
-            export test_environment = uat
-            export hub = local
-            export use_test_rail = yes
-            export test_plan_id = 1
-            use_screenshot = no
-
-    **cofiguration for running test from BrowserStack**
-            export test_environment = uat
-            export hub = browserstack
-            export use_test_rail = yes
-            export test_plan_id = 1
-            use_screenshot = no
-            export bs_user = testvdc1
-            export bs_access_key = z4gjxYshhqN7aUW7D4vP
-            export bs_browser = Chrome
-            export bs_os = Windows
-            export bs_os_version = 10
-            export bs_browser_version = 81.0
-            export bs_resolution = 1920x1080
-
-    3.2. Run command line "bundle exec rspec" to run tests
-
+    NOTE: Test scripts are in "spec" directory
+    3.1. Run command line "bundle exec rspec" to run tests
+    3.2. Open TestRails to check test result
+    3.3. Open BrowserStack to read test report
