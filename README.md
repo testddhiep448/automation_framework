@@ -37,6 +37,6 @@
             export bs_os_version = 10
             export bs_browser_version = 81.0
             export bs_resolution = 1920x1080
-            
-    3.2. Run command line "bundle exec rspec"
+
+    3.2. Run command line "bundle exec rspec" to run tests
 
