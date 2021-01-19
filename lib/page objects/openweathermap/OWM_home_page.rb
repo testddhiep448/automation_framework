@@ -6,7 +6,7 @@ class OpenWheaterMap < Page
   end
 
   def load_condition
-    search_form[0].displayed?
+    search_form.displayed?
   end
 
   # PAGE OJECTS ---------------------------------------------------- #

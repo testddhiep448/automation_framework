@@ -5,6 +5,7 @@ describe 'HAPPY test case for OpenWeatherMap', :OpenWeatherMap_HAPPY do
   let(:test_data) {EnvironmentConfig.instance.data}
   let(:test_url) {test_data[:openweathermap][:url]}
   let(:search_keyword){"Ho Chi Minh city"}
+  let(:search_result){"Thanh pho Ho Chi Minh"}
 ###################################################################################################
   it "[C1] Search weather in your city" do
     TestRunContent.test_step("Navigate to #{test_url}")
@@ -23,7 +24,7 @@ describe 'HAPPY test case for OpenWeatherMap', :OpenWeatherMap_HAPPY do
 
     TestRunContent.test_step("Verify search result")
       expected_search = true
-      actual_search = result_page.check_result(search_keyword)
+      actual_search = result_page.check_result(search_result)
       verify_expected_actual(expected_search, actual_search)
   end
 end
